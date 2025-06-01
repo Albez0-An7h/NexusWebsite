@@ -23,7 +23,7 @@ const Home = () => {
         { label: 'Help Center', icon: HelpCircle, href: '#help' }
     ];
 
-    const scrollToSection = (href) => {
+    const scrollToSection = (href: string) => {
         const element = document.querySelector(href);
         if (element) {
             const offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
